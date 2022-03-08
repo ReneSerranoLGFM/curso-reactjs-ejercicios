@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Contact {
+  background: rgb(102, 105, 110);
+  border: 2px white solid;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.connected {
+  color: rgb(0, 187, 0);
+}
+
+.disconnected {
+  color: red;
+}
