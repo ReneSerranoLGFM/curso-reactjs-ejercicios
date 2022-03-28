@@ -70,3 +70,35 @@
   }
 
 }
+
+.ContactCreateForm {
+  background: gray;
+  border: white solid 2px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 20px;
+  min-width: 400px;
+  text-align: left;
+
+  h3, h4 {
+    text-align: left;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .formGrid {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+  }
+
+  button {
+    width: 100px;
+    cursor: pointer;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
