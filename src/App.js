@@ -1,14 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
-import ComponenteA from "./components/ComponenteA";
-import Clock, { ClockClass } from "./components/Clock";
+import "./App.scss";
+import ContactList from "./components/ContactList";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Clock />
-        {/* <ClockClass /> */}
+        <ContactList />
       </header>
     </div>
   );
