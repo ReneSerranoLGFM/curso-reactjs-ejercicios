@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { BsPencil, BsTrash } from "react-icons/bs";
 
 function ContactComponent(props) {
   const [expanded, setExpanded] = useState(false);
@@ -60,8 +61,12 @@ function ContactComponent(props) {
       <div className="buttonsContainer">
         <button onClick={expand}>{expanded ? "Hide" : "Show"}</button>
         <button onClick={props.toggleOnline}>{props.contact.connected == false ? "Connect" : "Disconnect"}</button>
-        <button onClick={edit}>Edit</button>
-        <button onClick={props.deleteContact}>Delete</button>
+        <button onClick={edit}>
+          <BsPencil />
+        </button>
+        <button onClick={props.deleteContact}>
+          <BsTrash />
+        </button>
       </div>
 
       {/* Only when expanded */}
