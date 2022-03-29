@@ -13,8 +13,11 @@ function ContactList(props) {
   const [contacts, setContacts] = useState([contactExample, contactExample2]);
 
   // Update contacts state function
-  const updateContacts = () => {
+  const updateContact = (i, name, last_name, email) => {
     var tempContacts = [...contacts];
+    tempContacts[i].name = name;
+    tempContacts[i].last_name = last_name;
+    tempContacts[i].email = email;
     setContacts(tempContacts);
   };
 
@@ -49,6 +52,7 @@ function ContactList(props) {
             contact={contact}
             toggleOnline={() => toggleOnline(i)}
             deleteContact={() => deleteContact(i)}
+            updateContact={(name, last_name, email) => updateContact(i, name, last_name, email)}
           />
         );
       })}

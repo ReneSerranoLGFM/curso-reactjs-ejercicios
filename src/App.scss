@@ -53,6 +53,16 @@
   padding: 10px 20px;
   min-width: 400px;
   position: relative;
+  text-align: left;
+
+  input {
+    display: block;
+    margin: 5px 0;
+    font-size: 1.5rem;
+  }
+  .emailInput {
+    min-width: 300px;
+  }
 
   h3, h4 {
     text-align: left;
@@ -64,9 +74,9 @@
     top: 15px;
     right: 10px;
 
-    button {
-      cursor: pointer;
-    }
+  }
+  button {
+    cursor: pointer;
   }
 
 }
