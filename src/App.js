@@ -1,11 +1,11 @@
 import "./App.scss";
-import Square from "./components/Square";
+import TaskList from "./components/TaskList";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Square />
+        <TaskList />
       </header>
     </div>
   );

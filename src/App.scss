@@ -1,6 +1,92 @@
-.square {
-  margin: 100px;
-  width: 255px;
-  height: 255px;
-  background-color: black;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.green {
+  color: rgb(3, 185, 3);
+}
+
+.red {
+  color: red;
+}
+
+.TaskComponent {
+  background: gray;
+  border: white solid 2px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 20px;
+  min-width: 400px;
+  position: relative;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+
+  h3, h4 {
+    text-align: left;
+    margin: 5px;
+  }
+  
+  .buttonsContainer {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+
+  }
+  button {
+    cursor: pointer;
+  }
+
+}
+
+.TaskAddForm {
+  background: gray;
+  border: white solid 2px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 20px;
+  min-width: 400px;
+  text-align: left;
+
+  h3, h4 {
+    text-align: left;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .formGrid {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+  }
+
+  button {
+    width: 100px;
+    cursor: pointer;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
 }
