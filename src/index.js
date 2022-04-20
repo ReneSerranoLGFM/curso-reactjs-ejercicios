@@ -1,54 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import Login from "./pages/LoginPage";
-import Register from "./pages/RegisterPage";
-
-export default function AppRouting() {
-  const [loggedIn, setLoggedIn] = useState(false);
-
-  const login = () => {
-    setLoggedIn(true);
-    console.log("logged in!");
-  };
-
-  const logout = () => {
-    setLoggedIn(false);
-    console.log("logged out!");
-  };
-
-  return (
-    <Router>
-      <Switch>
-        {/* Index */}
-        <Route
-          exact
-          path="/"
-          render={() => {
-            return loggedIn ? <App logout={logout} /> : <Redirect to="/login" />;
-          }}
-        />
-        {/* Login Route */}
-        <Route
-          exact
-          path="/login"
-          render={() => {
-            return loggedIn ? <Redirect to="/" /> : <Login login={login} />;
-          }}
-        />
-        {/* Login Route */}
-        <Route exact path="/register" component={Register} />
-      </Switch>
-    </Router>
-  );
-}
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppRouting />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
