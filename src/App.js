@@ -1,11 +1,11 @@
 import "./App.scss";
-import { Jokes } from "./components/Jokes";
+import { ToDoApp } from "./components/ToDoApp";
 
 function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <Jokes />
+        <ToDoApp />
       </header>
     </div>
   );
