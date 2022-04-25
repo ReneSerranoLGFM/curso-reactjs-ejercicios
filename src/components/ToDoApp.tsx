@@ -11,6 +11,7 @@ export const ToDoApp = () => {
         <h1>My To Do</h1>
         <TaskList/>
         <AddTaskForm/>
+        <hr />
         <FilterOptions/>
     </div>
   )
