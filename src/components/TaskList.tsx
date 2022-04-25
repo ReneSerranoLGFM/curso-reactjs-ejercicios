@@ -12,6 +12,7 @@ export const TaskList = () => {
     dispatch({
       type: "ADD_TODO",
       payload: {
+        id: 1,
         name: "Example Task 1",
         description: "This is my first example task",
       },
@@ -19,6 +20,7 @@ export const TaskList = () => {
     dispatch({
       type: "ADD_TODO",
       payload: {
+        id: 2,
         name: "Example Task 2",
         description: "This is my second example task",
       },
@@ -30,10 +32,9 @@ export const TaskList = () => {
 
   // Return tasks list from store
   return <div>
-    {tasks.map((task, i) => {
-      console.log(task)
+    {tasks.map((task) => {
       return (
-        <TaskComponent key={i} task={task} />
+        <TaskComponent key={task.id} task={task} />
       )
     })}
   </div>;

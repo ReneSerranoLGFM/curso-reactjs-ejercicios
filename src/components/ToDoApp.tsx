@@ -8,6 +8,7 @@ import { TaskList } from './TaskList'
 export const ToDoApp = () => {
   return (
     <div>
+        <h1>My To Do</h1>
         <TaskList/>
         <AddTaskForm/>
         <FilterOptions/>
